@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Multistep2.css"> 
+     
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"crossorigin="anonymous">
+	<script src="captcha.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Sign-in</title>
+</head>
+<body>
+    
+   <!-- <div class="wrapper">
+        <header>Login Form</header>
+        <form action="#">
+          <div class="field email">
+            <div class="input-area">
+              <input type="text" id ="email" placeholder="Email Address">
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Email can't be blank</div>
+          </div>
+          <div class="field password">
+            <div class="input-area">
+              <input type="password" id="password" placeholder="Password">
+              <i class="icon fas fa-lock"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Password can't be blank</div>
+          </div>
+          <div class="pass-txt"><a href="#">Forgot password?</a></div>
+          <input type="submit" value="Login">
+        </form>
+        <div class="sign-txt">Not a yet member? <a href="#">Signup now</a></div>
+      </div>
+      <div id="errorMessages" style="color: red;"></div> -->
+
+
+      
+      <div class="container">
+        <h3>Signup Form</h3>
+        <div class="progress-bar">
+           <div class="step">
+              <p>
+                 Name
+              </p>
+              <div class="bullet">
+                 <span>1</span>
+              </div>
+              <div class="check fas fa-check"></div>
+           </div>
+           <div class="step">
+              <p>
+                 Contact
+              </p>
+              <div class="bullet">
+                 <span>2</span>
+              </div>
+              <div class="check fas fa-check"></div>
+           </div>
+           <div class="step">
+              <p>
+                 Birth
+              </p>
+              <div class="bullet">
+                 <span>3</span>
+              </div>
+              <div class="check fas fa-check"></div>
+           </div>
+           <div class="step">
+              <p>
+                 Submit
+              </p>
+              <div class="bullet">
+                 <span>4</span>
+              </div>
+              <div class="check fas fa-check"></div>
+           </div>
+        </div>
+        <div class="form-outer">
+           <form action="#">
+              <div class="page slide-page">
+                 <div class="title">
+                    Basic Info:
+                 </div>
+                 <div class="field">
+                    <div class="label">
+                       First Name
+                    </div>
+                    <input type="fname" id="fname" type="fname" name="FirstName">
+                 </div>
+                 <div class="field">
+                    <div class="label">
+                       Last Name
+                    </div>
+                    <input type="Lname" id="Lname" type="Lname" name="LastName">
+                 </div>
+                 <div class="field">
+                  
+                    <button class="firstNext next">Next</button>
+                 </div>
+              </div>
+              <div class="page">
+                 <div class="title">
+                    Contact Info:
+                 </div>
+                 <div class="field">
+                    <div class="label">
+                       Email Address <span id="emailerror"></span>
+                    </div>
+                    
+                    <input type="Email" id="Email" name="Email" onkeyup="validateEmail()">
+                    
+                  </div>
+                 <div class="field">
+                    <div class="label">
+                       Phone Number
+                    </div>
+                    <input type="Number" id="Mobile" name="PhoneNumber">
+                 </div>
+                 <div class="field btns">
+                    <button class="prev-1 prev">Back</button>
+                    
+                    <button class="next-1 next">Next</button>
+                 </div>
+              </div>
+              <div class="page">
+                 <div class="title">
+                    Date of Birth:
+                 </div>
+                 <div class="field">
+                    <div class="label">
+                       Date
+                    </div>
+                    <input type="date" id="date" name="Date" min="1960-01-01" max="2023-01-01">
+                 </div>
+                 <div class="field">
+                    <div class="label" id="Gender">
+                       Gender
+                    </div>
+                    <select>
+                       <option>Male</option>
+                       <option>Female</option>
+                       <option>Other</option>
+                    </select>
+                 </div>
+                 <div class="field btns">
+                    <button class="prev-2 prev">Back</button>
+                    
+                    <button class="next-2 next">Next</button>
+                 </div>
+              </div>
+              <div class="page">
+                 <div class="title">
+                    Login Details:
+                 </div>
+                 <div class="field">
+                    <div class="label">
+                       Username
+                    </div>
+                    <input type="Username" id="Username" name="Username">
+                 </div>
+                 <div class="field">
+                    <div class="label">
+                       Password
+                    </div>
+                    <input type="password" id="password" name="password">
+                 </div>
+                  <div class="field btns"> 
+                     <button class="prev-3 prev">Back</button>
+                    
+                    <button class="submit" onclick="validate(event)">Submit</button> 
+                     
+                      </div>
+                      </div>
+                 </div>
+              </div>
+
+           </form>
+        </div>
+     </div>
+     
+   <!--  <div class="popup" id="popup">
+      <i class='bx bx-check-circle'></i>
+        <h3>Thank you for Submitting!</h3>
+        <br>
+<button type="button"><a href="Signup.html">Back to Login</a></button> -->
+
+
+     <script src="Multistep2.js"></script>
+  </body>
+</html>
+
+
+    <!--   <script src="Multistep2.js"></script> --> 
+      
