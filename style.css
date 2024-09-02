@@ -1,0 +1,40 @@
+#{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 0 rgba(0,0,0, 2px);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    display: inline;
+    
+}
+.row{
+   width: 300px;
+   margin: 10px;
+   background-color: blueviolet;
+   border-radius: 15px;
+}
+.card{
+   width: 100%;
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    text-align: center;
+}
+.card p{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
