@@ -1,0 +1,57 @@
+body{
+    background-color: rgba(74, 74, 169, 0.077);
+}
+input{
+    height: 27px;
+    width: 250px;
+    background-color: rgb(236, 230, 230);
+    border: none;
+    
+}
+
+.text{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    background:linear-gradient(to right, rgb(237, 56, 237), rgb(177, 177, 245));
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px gray;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    padding-bottom: 30px;
+}
+.forgot-password{
+    text-align: center;
+    cursor: pointer;
+}
+ .submit{
+    border: 2px solid;
+    border-radius: 7px;
+    background-color: rgba(250, 40, 85, 0.901);
+    color: white;
+    border: none;
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+} 
+.submit:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.gray{
+    background-color: rgb(205, 202, 202);
+    color: white;
+    
+}
