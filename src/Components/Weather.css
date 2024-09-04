@@ -7,11 +7,17 @@
     display:flex;
     align-items: center;
     flex-direction: column;
+   
 }
 .search-bar{
     display: flex;
     align-items: center;
     gap: 12px;
+}
+.weather-app{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
 }
 .search-bar input{
     height:50px;
@@ -22,6 +28,7 @@
     color: #626262;
     background-color: #ebfffc;
     font-size: 18px;
+    width: 600px;
 }
  .search-icon{
      width: 50px;
@@ -32,11 +39,11 @@
     cursor: pointer;
     color: #626262;
 } 
-.date-time{
+.current-time{
     color: #fff;
     font-size:20px ;
     font-weight: 700;
-    margin-top: 10px;
+   
 }
 .weather-icon{
     width:150px;
@@ -75,4 +82,14 @@
 .weather-data .col img{
     width: 26px;
     margin-top: 10px;
+}
+.map{
+    width: 40vw;
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 20px;
+    
+}
+.location-details{
+    color:white;
 }
